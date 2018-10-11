@@ -1,0 +1,70 @@
+Total tables in db:
+
+1.Donor
+  1.Name
+  2.address
+  3.pinCode
+  4.Phone_no
+  5.BirthDate
+  6.UID no
+  7.E mail
+  8.password
+2.Collector
+  1.Name-First Last
+  2.address
+  3.Qualification - 10+2, UG,PG
+  4.pinCode
+  5.UID
+  6.BirthDate
+  7.upload- Photo, UID, DL, Marksheet , Father or Spouse ID, address proof
+  8.Email
+  9.password
+3.Medicine_Acceptor
+  1.Name
+  2.Properitier
+  3.Licience No
+  4.address
+  5.pinCode
+  6.Email
+  7.password
+  8.Contact no
+4.Vehicle
+  1.Registraton number
+  2.Servicing Date
+  3.Fuel type
+  4.Insurance
+  5.Name
+5.Assigned_Vehicle
+  1.Vehicle Id
+  2.Collector Id
+  3.Vehicle Usage Time
+  4.Destination
+  5.Distance
+
+6.Medicine Ledger
+  1.donor Id
+  2.Collector Id
+  3.Medicine Id
+  4.In Date
+  5.Out Date
+  6.Medicine Count
+  7.Medicine_Acceptor Id
+7.Medicine
+  1.Name
+  2.Manufacturing Date
+  3.Expiry Date
+  4.Manufacturer
+  5.Trade Name
+  6.Chemical Composition
+  7.Uses
+  8.Quantity
+  9.Side Effects
+  10.Salt Composition
+  11.Dosage
+8.Job
+  1.Collector ID
+  2.Medicine ID
+  3.Donor ID
+  4.Medicine_Acceptor ID
+  5. Date
+  
