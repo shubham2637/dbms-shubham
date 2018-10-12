@@ -8,7 +8,9 @@ Total tables in db:
   5.BirthDate
   6.UID no
   7.E mail
-  8.password
+  8.username
+  9.password
+  10.image
 2.Collector
   1.Name-First Last
   2.address
@@ -19,6 +21,7 @@ Total tables in db:
   7.upload- Photo, UID, DL, Marksheet , Father or Spouse ID, address proof
   8.Email
   9.password
+  10.image
 3.Medicine_Acceptor
   1.Name
   2.Properitier
@@ -67,4 +70,3 @@ Total tables in db:
   3.Donor ID
   4.Medicine_Acceptor ID
   5. Date
-  
