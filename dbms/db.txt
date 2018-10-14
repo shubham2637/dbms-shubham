@@ -37,7 +37,12 @@ Total tables in db:
   3.Fuel type
   4.Insurance
   5.Name
-  6.manufacturing year
+  6.license no.
+  7.owner name
+  8.date of birth
+  9.address
+  10.phone no.
+  11.date of issue of license
 5.Assigned_Vehicle
   1.Vehicle Id
   2.Collector Id
