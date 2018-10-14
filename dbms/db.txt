@@ -12,7 +12,7 @@ Total tables in db:
   9.password
   10.image
 2.Collector
-  1.Name-First Last
+  1.Name-First Middle Last
   2.address
   3.Qualification - 10+2, UG,PG
   4.pinCode
@@ -43,7 +43,7 @@ Total tables in db:
   9.address
   10.phone no.
   11.date of issue of license
-5.Assigned_Vehicle
+5.Assigns
   1.Vehicle Id
   2.Collector Id
   3.Vehicle Usage Time
