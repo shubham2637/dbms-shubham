@@ -24,8 +24,8 @@ Total tables in db:
   10.image
 3.Medicine_Acceptor
   1.Name
-  2.Properitier
-  3.Licience No
+  2.Proprietor
+  3.License No
   4.address
   5.pinCode
   6.Email
