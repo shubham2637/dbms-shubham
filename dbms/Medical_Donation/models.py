@@ -50,7 +50,7 @@ class Collector(models.Model):
         return (f"{self.name} {self.address} {self.username}")
 
 
-    class MedicineAcceptor(models.Model):
+    class Medical(models.Model):
         #to store a Image file
         def get_image_path(instance, filename):
             return os.path.join('photos', str(instance.id), filename)

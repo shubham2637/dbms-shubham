@@ -5,8 +5,22 @@
     <title>Medical Collector </title>
   </head>
   <body>
-    {% import static %}
+    {% load static %}
+    <center>
+      <div class="disp">
+
       
+    <h1>The List of Collectors</h1>
+    <ol>
+          {% for collector in collectors  %}
+          <li>
+            {{collector}}
+          </li>
+          {% endfor  %}
+    </ol>
+  </center>
+</div>
+
 
   </body>
 </html>

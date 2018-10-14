@@ -22,7 +22,7 @@ Total tables in db:
   8.Email
   9.password
   10.image
-3.Medicine_Acceptor
+3.Medical
   1.Name
   2.Proprietor
   3.License No
