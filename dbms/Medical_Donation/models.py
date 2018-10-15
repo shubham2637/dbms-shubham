@@ -26,9 +26,8 @@ class Doner(models.Model):
     password = models.CharField(max_length=16)
     image = models.ImageField(upload_to=get_image_path, blank =True, null=True)
 
-
-    def __str__ (self):
-        return (f"{self.name} {self.address} {self.username} ")
+    def __str__(self):
+        return (f"{self.name} {self.username} {self.Phone_no}")
 
 class Collector(models.Model):
     #to store a Image file
@@ -38,7 +37,7 @@ class Collector(models.Model):
     address = models.CharField(max_length=128)
     pinCode = models.IntegerField()
     Phone_no = models.IntegerField()
-    BirthDate = models.DateField(auto_now=False)
+    BirthDate = models.DateField()
     UID = models.IntegerField(unique=True)
     email = models.EmailField(max_length=64)
     username = models.CharField(max_length=16,unique=True)

@@ -18,6 +18,15 @@ def collectors(request):
 
     return render(request, "Medical_Donation/collector.html",context)
 
+def donors(request):
+    context = {
+    "donors": Doner.objects.all()
+    }
+
+    return render(request, "Medical_Donation/donor.html",context)
+
+
+
 def collector_add(request):
     context = {
     "collectors": Collector.objects.all()
@@ -26,8 +35,22 @@ def collector_add(request):
     return render(request, "Medical_Donation/add-collector.html",context)
 
 
+
+def donor_add(request):
+    context = {
+    "donors": Doner.objects.all()
+        }
+
+    return render(request, "Medical_Donation/add-donor.html",context)
+
+
 def create(request):
     if request.POST:
-        coll = Collector(name = request.POST['name'], address = request.POST['address'], pinCode = request.POST['pincode'], Phone_no = request.POST['phone_no'], BirthDate = request.POST['birthdate'], UID = request.POST['BirthDate'], email= request.POST['email'],username = request.POST['username'], password = request.POST['password'], image =request.POST['image'] )
+        if request.POST['pincode']:
+            pin = request.POST['pincode']
+        else:
+            pin = False
+        coll = Collector(name=request.POST['name'], address=(request.POST['address1']+ request.POST['address2'] + request.POST['address3']), pinCode=pin, Phone_no=request.POST['phone_no'],
+                BirthDate=request.POST['birthdate'], UID=request.POST['uid'], email=request.POST['email'],username=request.POST['username'], password=request.POST['password'], image=request.POST['image'] )
         coll.save()
     return HttpResponseRedirect(reverse("Add_Collector"))

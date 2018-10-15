@@ -9,7 +9,7 @@
     <title>Medical Donor </title>
   </head>
   <body>
-    <h1>The List of Collectors</h1>
+    <h1 class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205" style="text-align: center">The List of Donors</h1>
     {% load static %}
     <div class="">
       <table border="1" class="table table-striped table-bordered table-hover table-condensed">
@@ -18,16 +18,15 @@
           <th> <b>Username</b>  </th>
           <th> <b>Mobile Number</b> </th>
         </thead>
-        {% for c in collectors %}
+        {% for doner in donors %}
         <tbody>
 
-            <td>{{c.name}}</td>
-            <td>{{c.username}}</td>
-            <td>{{c.Phone_no}}</td>
+            <td>{{doner.name}}</td>
+            <td>{{doner.username}}</td>
+            <td>{{doner.Phone_no}}</td>
         </tbody>
-        {% endfor  %}
-
-      </table>
+            {% endfor  %}
+\      </table>
       <a href="/">Return to home page.</a>
     </div>
 
