@@ -47,7 +47,7 @@ class Collector(models.Model):
 
 
     def __str__(self):
-        return (f"{self.name} {self.address} {self.username}")
+        return (f"{self.name} {self.username} {self.Phone_no}")
 
 
     class Medical(models.Model):
@@ -68,4 +68,4 @@ class Collector(models.Model):
 
 
         def __str__(self):
-            return (f"{self.name} {self.address} {self.username}")
+            return (f"{self.name} {self.username} {self.Phone_no}")
