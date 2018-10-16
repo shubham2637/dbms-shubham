@@ -14,7 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'dbms.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,12 +89,25 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
+PASSWORD_HASHERS = [
+'django.contib.auth.hashers.Argon2PasswordHasher',
+'django.contib.auth.hashers.BCryptSHA256PasswordHasher',
+'django.contib.auth.hashers.BCryptPasswordHasher'
+'django.contib.auth.hashers.PBKDF2PasswordHasher',
+'django.contib.auth.hashers.PBKDFSHA1PasswordHasher',
+
+
+]
+
+
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'OPTIONS':{'min_length' :9}
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
