@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+  {% extends "flight/base.html" %}
+    {% block body_block  %}
+
+    <div class="container">
+      <h1 style="text-align: center">Form to Input Airport</h1>
+        {% load static  %}
+        <form class="form-inline"  method="post">
+
+
+            {{form.as_p}}
+            {% csrf_token %}
+
+        </form>
+        <input type="button" class="btn btn-primary" name="" value="submit">
+    </div>
+    {% endblock  %}

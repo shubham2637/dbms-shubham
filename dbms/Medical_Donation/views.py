@@ -3,6 +3,7 @@ from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.urls import reverse
 # Create your views here.
 from .models import Collector, Doner
+from .forms import *
 
 
 def index(request):
@@ -26,6 +27,15 @@ def donors(request):
     return render(request, "Medical_Donation/donor.html",context)
 
 
+def form_Collector(request):
+    form = forms.Collector_form()
+    if request.method:
+        form = forms.Collector_form(request.POST)
+    context={
+    "form" : form
+    }
+
+    return render(request, "Medical_Donation/collector_form.html")
 
 def collector_add(request):
     context = {

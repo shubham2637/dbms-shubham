@@ -1,0 +1,3 @@
+Pillow
+bcrypt
+django[argon2]
