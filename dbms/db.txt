@@ -5,23 +5,24 @@ Total tables in db:
   2.address
   3.pinCode
   4.Phone_no
-  5.BirthDate
+  5.Date Of Birth
   6.UID no
-  7.E mail
+  7.Email id
   8.username
   9.password
-  10.image
+  10.upload image
 2.Collector
-  1.Name-First Middle Last
+  1.Name
   2.address
-  3.Qualification - 10+2, UG,PG
-  4.pinCode
-  5.UID
-  6.BirthDate
-  7.upload- Photo, UID, DL, Marksheet , Father or Spouse ID, address proof
-  8.Email
-  9.password
-  10.image
+  3.pincode
+  4.phone_no
+  5.date of birth 
+  6.UID no
+  7.Email id
+  8.password
+  9.username
+  10. Qualification - 10+2, UG,PG
+  11.upload- Photo, UID, DL, Marksheet , Father or Spouse ID, address proof
 3.Medical
   1.Name
   2.Proprietor
