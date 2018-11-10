@@ -23,7 +23,7 @@ Total tables in db:
   9.username
   10. Qualification - 10+2, UG,PG
   11.upload- Photo, UID, DL, Marksheet , Father or Spouse ID, address proof
-3.Medical
+3.Medicine acceptor
   1.Name
   2.Proprietor
   3.License No
