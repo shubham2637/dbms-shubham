@@ -32,6 +32,7 @@ Total tables in db:
   6.Email
   7.password
   8.Contact no
+  9.username
 4.Vehicle
   1.Registraton number
   2.Servicing Date
